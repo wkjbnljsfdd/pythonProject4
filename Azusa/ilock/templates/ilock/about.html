@@ -1,0 +1,18 @@
+{% extends 'ilock/layout.html'%}
+
+
+
+
+{% block title%} Про нас  {% endblock%}
+
+{% block content%}
+
+{%  for el in tasks  %}
+    <h1>Про нас</h1>
+    <div class="alert alert-warning mt-2">
+        <h3>{{ el.title }}</h3>
+        <p3>{{ el.task }}</p3>
+    </div>
+{% endfor %}
+
+{% endblock%}
